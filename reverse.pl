@@ -14,3 +14,7 @@ insertar_final(E, [Ca|Resto], [Ca|R]):-
 % es cierto si R unifica con una lista que 
 % contine los elementos de L en orden inverso.
 
+reverse([], []).
+reverse([Ca|Resto], R2):- reverse(Resto, R), 
+   insertar_final(Ca, R, R2).
+
