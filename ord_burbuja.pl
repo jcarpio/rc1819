@@ -6,6 +6,15 @@
 % Lista puede contener elementos repetidos.
 
 
+ord_burbuja(L, L):- ordenada(L).
+
+ord_burbuja(L, R3):- append(L1, [E1, E2|L2], L),
+                   E1 > E2,
+				   append(L1, [E2, E1|L2], R2),
+				   ord_burbuja(R2, R3).
+
+
+
 
 % ordenada(+Lista)
 % es cierto si los elementos de Lista están ordenados de 
