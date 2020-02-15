@@ -19,5 +19,8 @@ anchura_gen([t(E, L)|Resto], [E|RT]):-
   
 % tree_gen3(t(a,[t(b,[t(f,())]), t(c,[t(g,[t(j,[])]),t(h,[])]), t(d,[]), t(e,[t(i,[])])])). 
 
+% Para probar el ejemplo
+% tree_gen3(A), anchura_gen(A, R).
+
 
 
